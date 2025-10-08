@@ -15,6 +15,10 @@
         "message": "Lus",
         "description": "background"
     },
+    "Archive_by_default_when_saving_page": {
+        "message": "Par défaut, marque la page comme lue lors de son enregistrement",
+        "description": "Options"
+    },
     "Article_s_link": {
         "message": "Lien de l'article",
         "description": "Popup"
@@ -95,6 +99,18 @@
         "message": "Extension pour Wallabag qui permet d'éditer le titre de la page, les tags, changer l'état en tant que favori, archivé ou supprimé.",
         "description": "Manifest.json"
     },
+    "Fetch_by_default_when_saving_page": {
+        "message": "Récupérer le contenu depuis le navigateur pour tous les sites",
+        "description": "Options"
+    },
+    "Fetch_from_the_browser": {
+        "message": "Récupération du contenu depuis le navigateur",
+        "description": "Options"
+    },
+    "First_you_need_to_create_a_new_client_then_try_again": {
+        "message": "Vous devez d'abord créer <a href=\"%URL%\" target=\"_blank\">un nouveau client</a>. Puis relancer la validation.",
+        "description": "Options"
+    },
     "Get_token": {
         "message": "Obtenir un jeton",
         "description": "Options"
@@ -163,9 +179,20 @@
         "message": "D'accord, j'ai compris",
         "description": "Options"
     },
+    "Options": {
+        "message": "Options",
+        "description": "Options"
+    },
     "Options_not_defined": {
         "message": "Wallabagger non configuré",
         "description": "Background"
+    },
+    "Others": {
+        "message": "Autres",
+        "description": "Options"
+    },
+    "Pick_a_client": {
+        "message": "Choisir un client"
     },
     "Remove_this_article_from_Wallabag": {
         "message": "Supprimer cet article de wallabag",
@@ -202,6 +229,30 @@
     "Set_this_article_as_starred_into_Wallabag": {
         "message": "Marquer cet article comme favori dans wallabag",
         "description": "Popup"
+    },
+    "Settings": {
+        "message": "Paramètres",
+        "description": "Options"
+    },
+    "Sites_locally_always_fetch_explaination": {
+        "message": "Vous souhaitez envoyer à wallabag le contenu de tous les sites depuis le navigateur ? Cochez cette case.",
+        "description": "Options"
+    },
+    "Sites_locally_always_fetch_title": {
+        "message": "Tous les sites",
+        "description": "Options"
+    },
+    "Sites_locally_fetch_general_explaination": {
+        "message": "Parfois, wallabag n'arrive pas à accéder au contenu que vous essayer de sauvegarder. Peut-être que le site a besoin que vous soyez connecté, ou il utilise JavaScript pour afficher le contenu. Cette fonctionnalité permet d'envoyer le contenu que vous êtes en train de voir depuis votre navigateur, alors wallabag n'a rien besoin de faire si ce n'est sauvegarder ce que vous lui envoyez.",
+        "description": "Options"
+    },
+    "Sites_locally_whitelist_fetch_explaination": {
+        "message": "Saisissez l'adresse du site dont la sauvegarde du contenu pose problème.",
+        "description": "Options"
+    },
+    "Sites_locally_whitelist_fetch_title": {
+        "message": "Liste blanche",
+        "description": "Options"
     },
     "Starred": {
         "message": "Favoris",
@@ -283,59 +334,8 @@
         "message": "Oui, le supprimer",
         "description": "Popup"
     },
-    "Archive_by_default_when_saving_page": {
-        "message": "Par défaut, marque la page comme lue lors de son enregistrement",
-        "description": "Options"
-    },
-    "Fetch_from_the_browser": {
-        "message": "Récupération du contenu depuis le navigateur",
-        "description": "Options"
-    },
-    "First, you need to create <a href=\"%URL%\" target=\"_blank\">a new client</a>. Then you need to try again.": {
-        "message": "Vous devez d'abord créer <a href=\"%URL%\" target=\"_blank\">un nouveau client</a>. Puis relancer la validation.",
-        "description": "Options"
-    },
-    "Options": {
-        "message": "Options",
-        "description": "Options"
-    },
-    "Others": {
-        "message": "Autres",
-        "description": "Options"
-    },
-    "Settings": {
-        "message": "Paramètres",
-        "description": "Options"
-    },
-    "Fetch_by_default_when_saving_page": {
-        "message": "Récupérer le contenu depuis le navigateur pour tous les sites",
-        "description": "Options"
-    },
-    "Sites_locally_always_fetch_title": {
-        "message": "Tous les sites",
-        "description": "Options"
-    },
-    "Sites_locally_always_fetch_explaination": {
-        "message": "Vous souhaitez envoyer à wallabag le contenu de tous les sites depuis le navigateur ? Cochez cette case.",
-        "description": "Options"
-    },
-    "Sites_locally_fetch_general_explaination": {
-        "message": "Parfois, wallabag n'arrive pas à accéder au contenu que vous essayer de sauvegarder. Peut-être que le site a besoin que vous soyez connecté, ou il utilise JavaScript pour afficher le contenu. Cette fonctionnalité permet d'envoyer le contenu que vous êtes en train de voir depuis votre navigateur, alors wallabag n'a rien besoin de faire si ce n'est sauvegarder ce que vous lui envoyez.",
-        "description": "Options"
-    },
-    "Sites_locally_whitelist_fetch_title": {
-        "message": "Liste blanche",
-        "description": "Options"
-    },
-    "Sites_locally_whitelist_fetch_explaination": {
-        "message": "Saisissez l'adresse du site dont la sauvegarde du contenu pose problème.",
-        "description": "Options"
-    },
-    "You need to be logged in <a href=\"%URL%\" target=\"_blank\">your wallabag</a>. Then you need to try again.": {
+    "You_need_to_be_logged_in_your_wallabag_then_try_again": {
         "message": "Vous devez être connecté à <a href=\"%URL%\" target=\"_blank\">votre wallabag</a>. Puis relancez la validation.",
         "description": "Options"
-    },
-    "Pick_a_client": {
-        "message": "Choisir un client"
     }
 }

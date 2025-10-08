@@ -7,9 +7,17 @@
         "message": "Todos los artículos",
         "description": "background"
     },
+    "Allow_Space_in_tags_this_disables_Space_as_send_tags_key_use_Enter_key_instead": {
+        "message": "Permitir espacios en las etiquetas (esto desactiva el Espacio como botón de envío, usa Intro en su lugar)",
+        "description": "Options"
+    },
     "Archive": {
         "message": "Archivar",
         "description": "background"
+    },
+    "Archive_by_default_when_saving_page": {
+        "message": "Guarda las páginas como archivadas por defecto",
+        "description": "Options"
     },
     "Article_s_link": {
         "message": "Enlace del artículo",
@@ -19,9 +27,17 @@
         "message": "Título del artículo",
         "description": "Popup"
     },
+    "Auto_add_single_tag": {
+        "message": "Añadir automáticamente una sola etiqueta",
+        "description": "Options"
+    },
     "Cancel": {
         "message": "Cancelar",
         "description": "Popup"
+    },
+    "Check_URL": {
+        "message": "Comprobar la URL",
+        "description": "Options"
     },
     "Checklist": {
         "message": "Lista de tareas",
@@ -37,6 +53,10 @@
     },
     "day_many": {
         "message": "días",
+        "description": "Options"
+    },
+    "day_one": {
+        "message": "día",
         "description": "Options"
     },
     "Delete_this_article": {
@@ -63,6 +83,10 @@
         "message": "Editar el título de Wallabag de este artículo",
         "description": "Popup"
     },
+    "Enable_this_only_if_developers_told_you_to": {
+        "message": "Activa esta opción solo si los desarrolladores te lo piden",
+        "description": "Options"
+    },
     "Enter_your_tags_here": {
         "message": "Introduce tus etiquetas aquí",
         "description": "Popup"
@@ -74,6 +98,22 @@
     "Extension_description": {
         "message": "Esta extensión de wallabag v2 permite editar el título, las etiquetas y establecer los estados favorito, archivado o eliminado.",
         "description": "Manifest.json"
+    },
+    "Fetch_by_default_when_saving_page": {
+        "message": "Recuperar el contenido del navegador de forma predeterminada al guardar la página",
+        "description": "Options"
+    },
+    "Fetch_from_the_browser": {
+        "message": "Obtener el contenido del navegador",
+        "description": "Options"
+    },
+    "Get_token": {
+        "message": "Obtener token",
+        "description": "Options"
+    },
+    "Go_to_this_article_page": {
+        "message": "Ir a la página de este artículo",
+        "description": "Popup"
     },
     "Go_to_Wallabag_s_article_page": {
         "message": "Ir a la página del artículo de wallabag",
@@ -103,6 +143,26 @@
         "message": "Cargando la API wallabag…",
         "description": "Popup"
     },
+    "minute_many": {
+        "message": "minutos",
+        "description": "Options"
+    },
+    "minute_one": {
+        "message": "minuto",
+        "description": "Options"
+    },
+    "No_leave_it": {
+        "message": "No, déjalo",
+        "description": "Popup"
+    },
+    "Not_checked": {
+        "message": "No comprobado",
+        "description": "Options"
+    },
+    "Not_granted": {
+        "message": "No concedido",
+        "description": "Options"
+    },
     "Ok": {
         "message": "De acuerdo",
         "description": "Options"
@@ -111,9 +171,17 @@
         "message": "De acuerdo, lo entiendo",
         "description": "Options"
     },
+    "Options": {
+        "message": "Opciones",
+        "description": "Options"
+    },
     "Options_not_defined": {
         "message": "Wallabagger no está configurado",
         "description": "Background"
+    },
+    "Others": {
+        "message": "Otros",
+        "description": "Options"
     },
     "Remove_this_article_from_Wallabag": {
         "message": "Eliminar este artículo de wallabag",
@@ -151,6 +219,18 @@
         "message": "Poner este artículo como destacado en wallabag",
         "description": "Popup"
     },
+    "Settings": {
+        "message": "Ajustes",
+        "description": "Options"
+    },
+    "Starred": {
+        "message": "Favorito",
+        "description": "background"
+    },
+    "State": {
+        "message": "Estado",
+        "description": "Options"
+    },
     "Tag_already_exists": {
         "message": "La etiqueta ya existe",
         "description": "Popup"
@@ -159,9 +239,25 @@
         "message": "Etiquetas",
         "description": "background"
     },
+    "Tags_found": {
+        "message": "Etiquetas encontradas:",
+        "description": "Popup"
+    },
     "Unread": {
         "message": "No leídos",
         "description": "background"
+    },
+    "Unset_this_article_as_archived_into_Wallabag": {
+        "message": "Desmarcar este artículo como archivado en wallabag",
+        "description": "Popup"
+    },
+    "Unset_this_article_as_starred_into_Wallabag": {
+        "message": "Desmarcar este artículo como destacado en wallabag",
+        "description": "Popup"
+    },
+    "Use_HTTPS": {
+        "message": "Usar HTTPS",
+        "description": "Options"
     },
     "User_login": {
         "message": "Nombre de usuario",
@@ -187,16 +283,16 @@
         "message": "Guardar la página en Wallabag sin abrir la ventana emergente",
         "description": "Manifest.json"
     },
+    "Wallabag_permission_checked": {
+        "message": "Permiso en wallabag comprobado",
+        "description": "Options"
+    },
     "Wallabag_URL": {
         "message": "Dirección URL en wallabag",
         "description": "Options"
     },
     "Wallabag_URL_checked": {
         "message": "Dirección URL a Wallabag comprobada",
-        "description": "Options"
-    },
-    "Wallabag_permission_checked": {
-        "message": "Permiso en wallabag comprobado",
         "description": "Options"
     },
     "We_need_an_access_to_your_wallabag_instance_to_read_write_and_update_content_Please_test_the_URL_again_and_accept_the_permission_request": {
@@ -206,101 +302,5 @@
     "Yes_delete_it": {
         "message": "Sí, bórrelo",
         "description": "Popup"
-    },
-    "Archive_by_default_when_saving_page": {
-        "message": "Guarda las páginas como archivadas por defecto",
-        "description": "Options"
-    },
-    "Not_checked": {
-        "message": "No comprobado",
-        "description": "Options"
-    },
-    "Allow_Space_in_tags_this_disables_Space_as_send_tags_key_use_Enter_key_instead": {
-        "message": "Permitir espacios en las etiquetas (esto desactiva el Espacio como botón de envío, usa Intro en su lugar)",
-        "description": "Options"
-    },
-    "Auto_add_single_tag": {
-        "message": "Añadir automáticamente una sola etiqueta",
-        "description": "Options"
-    },
-    "Check_URL": {
-        "message": "Comprobar la URL",
-        "description": "Options"
-    },
-    "day_one": {
-        "message": "día",
-        "description": "Options"
-    },
-    "minute_one": {
-        "message": "minuto",
-        "description": "Options"
-    },
-    "Enable_this_only_if_developers_told_you_to": {
-        "message": "Activa esta opción solo si los desarrolladores te lo piden",
-        "description": "Options"
-    },
-    "Get_token": {
-        "message": "Obtener token",
-        "description": "Options"
-    },
-    "No_leave_it": {
-        "message": "No, déjalo",
-        "description": "Popup"
-    },
-    "Not_granted": {
-        "message": "No concedido",
-        "description": "Options"
-    },
-    "Go_to_this_article_page": {
-        "message": "Ir a la página de este artículo",
-        "description": "Popup"
-    },
-    "minute_many": {
-        "message": "minutos",
-        "description": "Options"
-    },
-    "Unset_this_article_as_starred_into_Wallabag": {
-        "message": "Desmarcar este artículo como destacado en wallabag",
-        "description": "Popup"
-    },
-    "Starred": {
-        "message": "Favorito",
-        "description": "background"
-    },
-    "Use_HTTPS": {
-        "message": "Usar HTTPS",
-        "description": "Options"
-    },
-    "State": {
-        "message": "Estado",
-        "description": "Options"
-    },
-    "Tags_found": {
-        "message": "Etiquetas encontradas:",
-        "description": "Popup"
-    },
-    "Unset_this_article_as_archived_into_Wallabag": {
-        "message": "Desmarcar este artículo como archivado en wallabag",
-        "description": "Popup"
-    },
-    "Fetch_from_the_browser": {
-        "message": "Obtener el contenido del navegador",
-        "description": "Options"
-    },
-    "Options": {
-        "message": "Opciones",
-        "description": "Options"
-    },
-    "Others": {
-        "message": "Otros",
-        "description": "Options"
-    },
-    "Settings": {
-        "message": "Ajustes",
-        "description": "Options"
-    },
-    "Fetch_by_default_when_saving_page": {
-        "message": "Recuperar el contenido del navegador de forma predeterminada al guardar la página",
-        "description": "Options"
     }
 }

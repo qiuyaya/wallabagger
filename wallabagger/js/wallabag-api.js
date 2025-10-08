@@ -147,7 +147,8 @@ WallabagApi.prototype = {
         if (typeof (this.data.Url) !== 'string') {
             return false;
         }
-        this.data.AllowExistSafe = await this.SupportsHashedUrl();
+        // 强制启用AllowExistSafe，移除HTTPS限制
+        this.data.AllowExistSafe = true;
     },
 
     /**

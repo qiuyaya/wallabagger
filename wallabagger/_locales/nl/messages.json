@@ -5,14 +5,26 @@
     "All_entries": {
         "message": "Alle artikelen"
     },
+    "Allow_Space_in_tags_this_disables_Space_as_send_tags_key_use_Enter_key_instead": {
+        "message": "Spaties in labels toestaan (dit schakelt Spatie uit als accepteer toets, gebruik in plaats daarvan de Enter toets)"
+    },
     "Archive": {
         "message": "Archief"
+    },
+    "Archive_by_default_when_saving_page": {
+        "message": "Archiveer bij het opslaan van een pagina"
     },
     "Article_s_link": {
         "message": "Artikel link"
     },
     "Article_s_title": {
         "message": "Artikel titel"
+    },
+    "Auto_add_single_tag": {
+        "message": "Voeg enkele label automatisch toe"
+    },
+    "Cancel": {
+        "message": "Annuleren"
     },
     "Check_URL": {
         "message": "Controleer URL"
@@ -28,6 +40,12 @@
     },
     "day_many": {
         "message": "dagen"
+    },
+    "day_one": {
+        "message": "dag"
+    },
+    "Delete_this_article": {
+        "message": "Verwijder dit artikel"
     },
     "Denied": {
         "message": "Geweigerd"
@@ -53,17 +71,14 @@
     "Expired": {
         "message": "Vervallen"
     },
-    "Cancel": {
-        "message": "Annuleren"
+    "Extension_description": {
+        "message": "Deze wallabag v2 extensie kan titels en labels wijzigen, en verzamelingen een ster geven, archiveren of verwijderen."
     },
-    "Auto_add_single_tag": {
-        "message": "Voeg enkele label automatisch toe"
+    "Fetch_by_default_when_saving_page": {
+        "message": "Haal standaard inhoud op van de browser als de pagina opgeslagen wordt"
     },
-    "Wallabag_permission_checked": {
-        "message": "wallabag toestemming gecontroleerd"
-    },
-    "Archive_by_default_when_saving_page": {
-        "message": "Archiveer bij het opslaan van een pagina"
+    "Fetch_from_the_browser": {
+        "message": "Inhoud ophalen van de browser"
     },
     "Get_token": {
         "message": "Verkrijg token"
@@ -74,17 +89,29 @@
     "Go_to_Wallabag_s_article_page": {
         "message": "Ga naar wallabags artikel pagina"
     },
+    "Granted": {
+        "message": "Toegestaan"
+    },
     "hour_many": {
         "message": "uren"
     },
     "hour_one": {
         "message": "uur"
     },
+    "Indicate_if_page_already_saved_into_wallabag_the_wallabagger_icon_is_green": {
+        "message": "Geeft aan of de pagina al opgeslagen is (het wallabagger pictogram is groen)"
+    },
+    "Indicate_if_page_already_saved_this_sends_URL_of_each_tab_to_wallabag_use_HTTPS_protocol_for_better_security": {
+        "message": "Geef aan of de pagina al is opgeslagen (dit stuurt de URL van elk tabblad naar wallabag, gebruik het HTTPS-protocol voor meer veiligheid!)"
+    },
     "Load_from_file": {
         "message": "Laad van bestand"
     },
     "Loading_wallabag_API": {
         "message": "Wallabag API laden…"
+    },
+    "minute_many": {
+        "message": "minuten"
     },
     "minute_one": {
         "message": "minuut"
@@ -119,8 +146,32 @@
     "Reset_parameters": {
         "message": "Naar standaardwaarden wijzigen"
     },
+    "Save": {
+        "message": "Opslaan"
+    },
     "Save_Error": {
         "message": "Er trad een fout op bij het opslaan van het artikel"
+    },
+    "Save_to_file": {
+        "message": "Opslaan naar bestand"
+    },
+    "Saving_tags": {
+        "message": "Labels opslaan…"
+    },
+    "Saving_the_page_to_wallabag": {
+        "message": "Pagina naar wallabag opslaan…"
+    },
+    "Set_this_article_as_archived_into_Wallabag": {
+        "message": "Archiveer dit artikel in wallabag"
+    },
+    "Set_this_article_as_starred_into_Wallabag": {
+        "message": "Geef dit artikel een ster in wallabag"
+    },
+    "Settings": {
+        "message": "Instellingen"
+    },
+    "Starred": {
+        "message": "Met ster"
     },
     "State": {
         "message": "Status"
@@ -155,79 +206,28 @@
     "Wallabag_API_token": {
         "message": "wallabag API token"
     },
-    "Wallabag_URL": {
-        "message": "wallabag URL"
-    },
-    "Yes_delete_it": {
-        "message": "Ja, verwijder het"
-    },
-    "Fetch_by_default_when_saving_page": {
-        "message": "Haal standaard inhoud op van de browser als de pagina opgeslagen wordt"
-    },
     "Wallabag_API_version": {
         "message": "wallabag API versie"
-    },
-    "Allow_Space_in_tags_this_disables_Space_as_send_tags_key_use_Enter_key_instead": {
-        "message": "Spaties in labels toestaan (dit schakelt Spatie uit als accepteer toets, gebruik in plaats daarvan de Enter toets)"
-    },
-    "day_one": {
-        "message": "dag"
-    },
-    "Wallabag_URL_checked": {
-        "message": "wallabag URL gecontroleerd"
-    },
-    "Delete_this_article": {
-        "message": "Verwijder dit artikel"
-    },
-    "minute_many": {
-        "message": "minuten"
-    },
-    "Fetch_from_the_browser": {
-        "message": "Inhoud ophalen van de browser"
-    },
-    "Saving_tags": {
-        "message": "Labels opslaan…"
-    },
-    "Save": {
-        "message": "Opslaan"
-    },
-    "Granted": {
-        "message": "Toegestaan"
-    },
-    "Saving_the_page_to_wallabag": {
-        "message": "Pagina naar wallabag opslaan…"
-    },
-    "Save_to_file": {
-        "message": "Opslaan naar bestand"
-    },
-    "Starred": {
-        "message": "Met ster"
-    },
-    "Set_this_article_as_archived_into_Wallabag": {
-        "message": "Archiveer dit artikel in wallabag"
-    },
-    "Settings": {
-        "message": "Instellingen"
     },
     "Wallabag_it": {
         "message": "wallabag het!"
     },
-    "Indicate_if_page_already_saved_this_sends_URL_of_each_tab_to_wallabag_use_HTTPS_protocol_for_better_security": {
-        "message": "Geef aan of de pagina al is opgeslagen (dit stuurt de URL van elk tabblad naar wallabag, gebruik het HTTPS-protocol voor meer veiligheid!)"
-    },
     "Wallabag_it_description": {
         "message": "Bewaar de pagina in wallabag zonder de popup te openen"
+    },
+    "Wallabag_permission_checked": {
+        "message": "wallabag toestemming gecontroleerd"
+    },
+    "Wallabag_URL": {
+        "message": "wallabag URL"
+    },
+    "Wallabag_URL_checked": {
+        "message": "wallabag URL gecontroleerd"
     },
     "We_need_an_access_to_your_wallabag_instance_to_read_write_and_update_content_Please_test_the_URL_again_and_accept_the_permission_request": {
         "message": "Er is toegang nodig tot jouw wallabag installatie om inhoud te lezen, schrijven en wijzigen. Test de URL nog een keer en accepteer het verzoek."
     },
-    "Set_this_article_as_starred_into_Wallabag": {
-        "message": "Geef dit artikel een ster in wallabag"
-    },
-    "Extension_description": {
-        "message": "Deze wallabag v2 extensie kan titels en labels wijzigen, en verzamelingen een ster geven, archiveren of verwijderen."
-    },
-    "Indicate_if_page_already_saved_into_wallabag_the_wallabagger_icon_is_green": {
-        "message": "Geeft aan of de pagina al opgeslagen is (het wallabagger pictogram is groen)"
+    "Yes_delete_it": {
+        "message": "Ja, verwijder het"
     }
 }

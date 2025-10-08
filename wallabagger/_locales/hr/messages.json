@@ -15,6 +15,10 @@
         "message": "Arhiv",
         "description": "background"
     },
+    "Archive_by_default_when_saving_page": {
+        "message": "Standardno arhiviraj tijekom spremanja stranice",
+        "description": "Options"
+    },
     "Article_s_link": {
         "message": "Poveznica članka",
         "description": "Popup"
@@ -22,6 +26,10 @@
     "Article_s_title": {
         "message": "Naslov članka",
         "description": "Popup"
+    },
+    "Auto_add_single_tag": {
+        "message": "Automatski dodaj jednu oznaku",
+        "description": "Options"
     },
     "Cancel": {
         "message": "Odustani",
@@ -91,6 +99,14 @@
         "message": "Ovo proširenje za wallabag v2 omogućuje uređivanje naslova i oznaka, kao i određivanje omiljenih članaka, arhiviranje ili brisanje.",
         "description": "Manifest.json"
     },
+    "Fetch_by_default_when_saving_page": {
+        "message": "Standardno dohvati sadržaj iz preglednika tijekom spremanja stranice",
+        "description": "Options"
+    },
+    "Fetch_from_the_browser": {
+        "message": "Dohvati sadržaj iz preglednika",
+        "description": "Options"
+    },
     "Get_token": {
         "message": "Nabavi token",
         "description": "Options"
@@ -155,9 +171,17 @@
         "message": "U redu, razumijem",
         "description": "Options"
     },
+    "Options": {
+        "message": "Opcije",
+        "description": "Options"
+    },
     "Options_not_defined": {
         "message": "Wallabagger nije konfiguriran",
         "description": "Background"
+    },
+    "Others": {
+        "message": "Drugo",
+        "description": "Options"
     },
     "Remove_this_article_from_Wallabag": {
         "message": "Ukloni ovaj članak iz wallabaga",
@@ -194,6 +218,10 @@
     "Set_this_article_as_starred_into_Wallabag": {
         "message": "Označi ovaj članak kao označen u Wallabagu",
         "description": "Popup"
+    },
+    "Settings": {
+        "message": "Postavke",
+        "description": "Options"
     },
     "Starred": {
         "message": "Omiljeni",
@@ -274,33 +302,5 @@
     "Yes_delete_it": {
         "message": "Da, izbriši",
         "description": "Popup"
-    },
-    "Archive_by_default_when_saving_page": {
-        "message": "Standardno arhiviraj tijekom spremanja stranice",
-        "description": "Options"
-    },
-    "Auto_add_single_tag": {
-        "message": "Automatski dodaj jednu oznaku",
-        "description": "Options"
-    },
-    "Options": {
-        "message": "Opcije",
-        "description": "Options"
-    },
-    "Others": {
-        "message": "Drugo",
-        "description": "Options"
-    },
-    "Settings": {
-        "message": "Postavke",
-        "description": "Options"
-    },
-    "Fetch_from_the_browser": {
-        "message": "Dohvati sadržaj iz preglednika",
-        "description": "Options"
-    },
-    "Fetch_by_default_when_saving_page": {
-        "message": "Standardno dohvati sadržaj iz preglednika tijekom spremanja stranice",
-        "description": "Options"
     }
 }

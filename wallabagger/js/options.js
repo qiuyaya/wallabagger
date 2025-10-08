@@ -34,8 +34,7 @@ class OptionsController {
         this.loadFromFileButton = document.getElementById('loadFromFile-button');
         this.clearButton = document.getElementById('clear-button');
         this.openFileDialog = document.getElementById('openFile-dialog');
-        this.httpsMessage = document.getElementById('https-message');
-        this.httpsButton = document.getElementById('https-button');
+        // HTTPS相关元素已移除
         this.autoAddSingleTag = document.getElementById('single-tag');
         this.clientSelector = new ClientSelector(document.getElementById('client-selector'));
         this.addListeners_();
@@ -56,13 +55,11 @@ class OptionsController {
         this.loadFromFileButton.addEventListener('click', this.loadFromFileClick.bind(this));
         this.clearButton.addEventListener('click', this.clearClick.bind(this));
         this.openFileDialog.addEventListener('change', this.loadFromFile.bind(this));
-        this.httpsButton.addEventListener('click', this.httpsButtonClick.bind(this));
+        // HTTPS按钮事件监听器已移除
         this.autoAddSingleTag.addEventListener('click', this.autoAddSingleTagClick.bind(this));
     }
 
-    httpsButtonClick () {
-        this.httpsMessage.classList.remove('active');
-    }
+    // httpsButtonClick方法已移除
 
     clearClick () {
         this.userLogin_.value = '';
@@ -156,13 +153,9 @@ class OptionsController {
             this.allowExistCheck.checked = false;
             return;
         }
-        if (this.protocolCheck_.checked) {
-            Object.assign(this.data, { AllowExistCheck: this.allowExistCheck.checked });
-            this.port.postMessage({ request: 'setup-save', data: this.data });
-        } else {
-            this.allowExistCheck.checked = false;
-            this.httpsMessage.classList.add('active');
-        }
+        // 移除HTTPS限制，允许HTTP协议使用存在检查功能
+        Object.assign(this.data, { AllowExistCheck: this.allowExistCheck.checked });
+        this.port.postMessage({ request: 'setup-save', data: this.data });
     }
 
     debugClick () {
@@ -310,6 +303,13 @@ class OptionsController {
         e.preventDefault();
         this.clearMessage(this.checkUrlMessage_);
         this.clientSelector.clear();
+
+        // 检查 data 是否已初始化
+        if (!this.data) {
+            this.showMessage(this.checkUrlMessage_, 'danger', 'Please wait for initialization to complete');
+            return;
+        }
+
         const urlDirty = this._getUrl();
         if (urlDirty !== '') {
             this._setProtocolCheck(urlDirty);
@@ -368,11 +368,11 @@ class OptionsController {
                 this.clientSelector.set(clients, onOptionSelected);
             } else {
                 this.clientSelector.clear();
-                this.setMessage(this.checkUrlMessage_, Common.translate('First, you need to create <a href="%URL%" target="_blank">a new client</a>. Then you need to try again.').replace('%URL%', urls.clientCreate));
+                this.setMessage(this.checkUrlMessage_, Common.translate('First_you_need_to_create_a_new_client_then_try_again').replace('%URL%', urls.clientCreate));
             }
         } else {
             this.clientSelector.clear();
-            this.setMessage(this.checkUrlMessage_, Common.translate('You need to be logged in <a href="%URL%" target="_blank">your wallabag</a>. Then you need to try again.').replace('%URL%', urls.login));
+            this.setMessage(this.checkUrlMessage_, Common.translate('You_need_to_be_logged_in_your_wallabag_then_try_again').replace('%URL%', urls.login));
         }
     }
 

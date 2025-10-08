@@ -15,6 +15,10 @@
         "message": "アーカイブ済みの記事",
         "description": "background"
     },
+    "Archive_by_default_when_saving_page": {
+        "message": "ページを保存する時に既定でアーカイブする",
+        "description": "Options"
+    },
     "Article_s_link": {
         "message": "記事のリンク",
         "description": "Popup"
@@ -55,13 +59,13 @@
         "message": "日",
         "description": "Options"
     },
-    "Denied": {
-        "message": "拒否",
-        "description": "Options"
-    },
     "Delete_this_article": {
         "message": "記事の削除",
         "description": "Popup"
+    },
+    "Denied": {
+        "message": "拒否",
+        "description": "Options"
     },
     "Do_you_want_to_remove_this_article_permanently_from_wallabag": {
         "message": "この記事を Wallabag から完全に削除してよろしいですか？",
@@ -247,10 +251,6 @@
         "message": "Wallabag API トークン",
         "description": "Options"
     },
-    "Wallabag_permission_checked": {
-        "message": "Wallabag の権限の確認状況",
-        "description": "Options"
-    },
     "Wallabag_API_version": {
         "message": "Wallabag API バージョン",
         "description": "Options"
@@ -262,6 +262,10 @@
     "Wallabag_it_description": {
         "message": "ポップアップを開かずに Wallabag にページを保存する",
         "description": "Manifest.json"
+    },
+    "Wallabag_permission_checked": {
+        "message": "Wallabag の権限の確認状況",
+        "description": "Options"
     },
     "Wallabag_URL": {
         "message": "Wallabag URL",
@@ -278,9 +282,5 @@
     "Yes_delete_it": {
         "message": "削除する",
         "description": "Popup"
-    },
-    "Archive_by_default_when_saving_page": {
-        "message": "ページを保存する時に既定でアーカイブする",
-        "description": "Options"
     }
 }

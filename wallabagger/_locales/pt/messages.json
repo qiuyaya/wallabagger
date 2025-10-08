@@ -1,8 +1,4 @@
 {
-    "Cancel": {
-        "message": "Cancelar",
-        "description": "Popup"
-    },
     "Agreed": {
         "message": "Aceite",
         "description": "Options"
@@ -11,8 +7,28 @@
         "message": "Todas as entradas",
         "description": "background"
     },
-    "Enter_your_tags_here": {
-        "message": "Introduza as suas etiquetas aqui",
+    "Allow_Space_in_tags_this_disables_Space_as_send_tags_key_use_Enter_key_instead": {
+        "message": "Permitir espaços nas etiquetas (isto desativa o uso da barra de espaço como tecla de envio de etiquetas, use a tecla Enter em alternativa)",
+        "description": "Options"
+    },
+    "Archive": {
+        "message": "Arquivo",
+        "description": "background"
+    },
+    "Article_s_link": {
+        "message": "Link do artigo",
+        "description": "Popup"
+    },
+    "Article_s_title": {
+        "message": "Título do artigo",
+        "description": "Popup"
+    },
+    "Auto_add_single_tag": {
+        "message": "Adicionar automaticamente uma única tag",
+        "description": "Options"
+    },
+    "Cancel": {
+        "message": "Cancelar",
         "description": "Popup"
     },
     "Check_URL": {
@@ -23,6 +39,10 @@
         "message": "Lista de verificação",
         "description": "Options"
     },
+    "Client_ID": {
+        "message": "ID do cliente",
+        "description": "Options"
+    },
     "Client_secret": {
         "message": "Segredo do cliente",
         "description": "Options"
@@ -30,6 +50,14 @@
     "day_many": {
         "message": "dias",
         "description": "Options"
+    },
+    "day_one": {
+        "message": "dia",
+        "description": "Options"
+    },
+    "Delete_this_article": {
+        "message": "Apagar este artigo",
+        "description": "Popup"
     },
     "Denied": {
         "message": "Negado",
@@ -55,44 +83,8 @@
         "message": "Só ative esta opção se os desenvolvedores lhe tiverem pedido",
         "description": "Options"
     },
-    "Allow_Space_in_tags_this_disables_Space_as_send_tags_key_use_Enter_key_instead": {
-        "message": "Permitir espaços nas etiquetas (isto desativa o uso da barra de espaço como tecla de envio de etiquetas, use a tecla Enter em alternativa)",
-        "description": "Options"
-    },
-    "Client_ID": {
-        "message": "ID do cliente",
-        "description": "Options"
-    },
-    "day_one": {
-        "message": "dia",
-        "description": "Options"
-    },
-    "Delete_this_article": {
-        "message": "Apagar este artigo",
-        "description": "Popup"
-    },
-    "Saving_the_page_to_wallabag": {
-        "message": "Salvando a página para wallabag…",
-        "description": "background"
-    },
-    "Set_this_article_as_archived_into_Wallabag": {
-        "message": "Defina este artigo como arquivado no Wallabag",
-        "description": "Popup"
-    },
-    "Auto_add_single_tag": {
-        "message": "Adicionar automaticamente uma única tag",
-        "description": "Options"
-    },
-    "Archive": {
-        "message": "Arquivo",
-        "description": "background"
-    },
-    "Article_s_link": {
-        "message": "Link do artigo",
-        "description": "Popup"
-    },
-    "Article_s_title": {
-        "message": "Título do artigo",
+    "Enter_your_tags_here": {
+        "message": "Introduza as suas etiquetas aqui",
         "description": "Popup"
     },
     "Expired": {
@@ -189,6 +181,14 @@
     },
     "Saving_tags": {
         "message": "Salvando etiquetas…",
+        "description": "Popup"
+    },
+    "Saving_the_page_to_wallabag": {
+        "message": "Salvando a página para wallabag…",
+        "description": "background"
+    },
+    "Set_this_article_as_archived_into_Wallabag": {
+        "message": "Defina este artigo como arquivado no Wallabag",
         "description": "Popup"
     },
     "Set_this_article_as_starred_into_Wallabag": {

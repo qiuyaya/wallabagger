@@ -15,6 +15,10 @@
         "message": "Архив статей",
         "description": "background"
     },
+    "Archive_by_default_when_saving_page": {
+        "message": "Архивировать при сохранении",
+        "description": "Options"
+    },
     "Article_s_link": {
         "message": "Ссылка на статью",
         "description": "Popup"
@@ -59,13 +63,13 @@
         "message": "день",
         "description": "Options"
     },
-    "Denied": {
-        "message": "Отказано",
-        "description": "Options"
-    },
     "Delete_this_article": {
         "message": "Удалить эту статью",
         "description": "Popup"
+    },
+    "Denied": {
+        "message": "Отказано",
+        "description": "Options"
     },
     "Do_you_want_to_remove_this_article_permanently_from_wallabag": {
         "message": "Вы хотите удалить эту статью из wallabag?",
@@ -259,10 +263,6 @@
         "message": "Wallabag API токен",
         "description": "Options"
     },
-    "Wallabag_permission_checked": {
-        "message": "Разрешение Wallabag проверено",
-        "description": "Options"
-    },
     "Wallabag_API_version": {
         "message": "Версия Wallabag API",
         "description": "Options"
@@ -274,6 +274,10 @@
     "Wallabag_it_description": {
         "message": "Сохранить статью на Wallabag без открытия окна",
         "description": "Manifest.json"
+    },
+    "Wallabag_permission_checked": {
+        "message": "Разрешение Wallabag проверено",
+        "description": "Options"
     },
     "Wallabag_URL": {
         "message": "Wallabag URL",
@@ -290,9 +294,5 @@
     "Yes_delete_it": {
         "message": "Да, удалить",
         "description": "Popup"
-    },
-    "Archive_by_default_when_saving_page": {
-        "message": "Архивировать при сохранении",
-        "description": "Options"
     }
 }

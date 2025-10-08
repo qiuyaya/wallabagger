@@ -43,7 +43,7 @@ const wallabagContextMenus = [
     {
         id: 'wallabagger-add-link',
         title: Common.translate('Wallabag_it'),
-        contexts: ['link', 'page', 'tab']
+        contexts: ['link', 'page']
     },
     {
         id: 'unread',
@@ -86,16 +86,36 @@ const api = new WallabagApi();
 
 // Code
 
-const version = browser.runtime.getManifest().version.split('.');
-version.length === 4 && browser.action.setBadgeText({ text: 'ß' });
-
-api.init().then(data => {
-    addExistCheckListeners(api.data.AllowExistCheck);
-    api.GetTags().then(tags => { cache.set('allTags', tags); });
-});
-
+// 立即添加事件监听器
 addListeners();
-createContextMenus();
+
+// 在 Service Worker 启动时初始化（延迟执行以避免阻塞）
+setTimeout(() => {
+    initializeExtension();
+}, 100);
+
+// 初始化函数，在需要时调用
+async function initializeExtension () {
+    const version = browser.runtime.getManifest().version.split('.');
+    if (version.length === 4) {
+        browser.action.setBadgeText({ text: 'ß' });
+    }
+
+    try {
+        await api.init();
+        addExistCheckListeners(api.data.AllowExistCheck);
+        createContextMenus();
+
+        try {
+            const tags = await api.GetTags();
+            cache.set('allTags', tags);
+        } catch (error) {
+            console.log('Failed to load tags:', error);
+        }
+    } catch (error) {
+        console.log('Failed to initialize API:', error);
+    }
+}
 
 // Functions
 function createContextMenus () {
@@ -333,6 +353,9 @@ function onRuntimeConnect (port) {
 }
 
 function onRuntimeInstalled (details) {
+    // 初始化扩展
+    initializeExtension();
+
     if (details.reason === 'install') {
         openOptionsPage();
     }
@@ -483,6 +506,52 @@ function savePageToWallabag (url, resetIcon, title, content) {
         return;
     }
 
+    // Check if article already exists before saving
+    if (exists === existStates.exists) {
+        // Double-check the existence to avoid false positives
+        api.EntryExists(url)
+            .then(data => {
+                if (data.exists) {
+                    browserIcon.set('good');
+                    saveExistFlag(url, existStates.exists);
+                    postIfConnected({ response: 'error', error: { message: Common.translate('Article_already_saved') } });
+                } else {
+                    // Cache was wrong, proceed with saving
+                    saveExistFlag(url, existStates.notexists);
+                    proceedWithSaving(url, resetIcon, title, content, isToFetchLocally);
+                }
+            })
+            .catch(() => {
+                // If exist check fails, proceed with saving
+                proceedWithSaving(url, resetIcon, title, content, isToFetchLocally);
+            });
+        return;
+    }
+
+    // Check for existence if not already checked
+    if (exists === existStates.notexists && !existCache.check(url)) {
+        api.EntryExists(url)
+            .then(data => {
+                if (data.exists) {
+                    browserIcon.set('good');
+                    saveExistFlag(url, existStates.exists);
+                    postIfConnected({ response: 'error', error: { message: Common.translate('Article_already_saved') } });
+                } else {
+                    saveExistFlag(url, existStates.notexists);
+                    proceedWithSaving(url, resetIcon, title, content, isToFetchLocally);
+                }
+            })
+            .catch(() => {
+                // If exist check fails, proceed with saving
+                proceedWithSaving(url, resetIcon, title, content, isToFetchLocally);
+            });
+        return;
+    }
+
+    proceedWithSaving(url, resetIcon, title, content, isToFetchLocally);
+}
+
+function proceedWithSaving (url, resetIcon, title, content, isToFetchLocally) {
     // real saving
     browserIcon.set('wip');
     existCache.set(url, existStates.wip);

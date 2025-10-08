@@ -15,6 +15,14 @@
         "message": "Archive",
         "description": "background"
     },
+    "Archive_by_default_when_saving_page": {
+        "message": "Archive by default when saving the page",
+        "description": "Options"
+    },
+    "Article_already_saved": {
+        "message": "This article has already been saved to wallabag",
+        "description": "Background"
+    },
     "Article_s_link": {
         "message": "Article's link",
         "description": "Popup"
@@ -95,11 +103,15 @@
         "message": "This wallabag v2 extension has the ability to edit title and tags and set starred, archived, or delete states.",
         "description": "Manifest.json"
     },
+    "Fetch_by_default_when_saving_page": {
+        "message": "Retrieve content from the browser by default when saving page",
+        "description": "Options"
+    },
     "Fetch_from_the_browser": {
         "message": "Content fetching from the browser",
         "description": "Options"
     },
-    "First, you need to create <a href=\"%URL%\" target=\"_blank\">a new client</a>. Then you need to try again.": {
+    "First_you_need_to_create_a_new_client_then_try_again": {
         "message": "First, you need to create <a href=\"%URL%\" target=\"_blank\">a new client</a>. Then you need to try again.",
         "description": "Options"
     },
@@ -239,12 +251,12 @@
         "message": "Sometimes, wallabag can't access to the content you're trying to store. Maybe it's a website requiring a login action, or using JavaScript to display the content. This feature give you the power to send the content you're looking in front of you, in the browser, so wallabag doesn't have to try anything but saving the stuff you sent to it.",
         "description": "Options"
     },
-    "Sites_locally_whitelist_fetch_title": {
-        "message": "Whitelist",
-        "description": "Options"
-    },
     "Sites_locally_whitelist_fetch_explaination": {
         "message": "Enter the address of the website whose content you wish to store.",
+        "description": "Options"
+    },
+    "Sites_locally_whitelist_fetch_title": {
+        "message": "Whitelist",
         "description": "Options"
     },
     "Starred": {
@@ -327,15 +339,7 @@
         "message": "Yes, delete it",
         "description": "Popup"
     },
-    "Fetch_by_default_when_saving_page": {
-        "message": "Retrieve content from the browser by default when saving page",
-        "description": "Options"
-    },
-    "Archive_by_default_when_saving_page": {
-        "message": "Archive by default when saving the page",
-        "description": "Options"
-    },
-    "You need to be logged in <a href=\"%URL%\" target=\"_blank\">your wallabag</a>. Then you need to try again.": {
+    "You_need_to_be_logged_in_your_wallabag_then_try_again": {
         "message": "You need to be logged in <a href=\"%URL%\" target=\"_blank\">your wallabag</a>. Then you need to try again.",
         "description": "Options"
     }
