@@ -40,7 +40,10 @@ WallabagApi.prototype = {
         AutoAddSingleTag: false,
         ArchiveByDefault: false,
         sitesToFetchLocally: null,
-        FetchLocallyByDefault: false
+        FetchLocallyByDefault: false,
+        EnableAutheliaCookies: false,
+        AutheliaHeaderName: null,
+        AutheliaHeaderValue: null
     },
 
     data: {},
@@ -52,12 +55,24 @@ WallabagApi.prototype = {
     init: function () {
         Object.assign(this.data, this.defaultValues);
         this.fetchApi = new FetchApi();
+        this.updateFetchApiConfig();
         return this.load().then(
             result => {
                 this.setAllowExistSafe();
+                this.updateFetchApiConfig();
                 return Promise.resolve(result);
             }
         );
+    },
+
+    updateFetchApiConfig: function () {
+        if (this.fetchApi) {
+            this.fetchApi.setAutheliaConfig({
+                enableCookies: this.data.EnableAutheliaCookies,
+                headerName: this.data.AutheliaHeaderName,
+                headerValue: this.data.AutheliaHeaderValue
+            });
+        }
     },
 
     resetDebug: function () {
@@ -127,6 +142,7 @@ WallabagApi.prototype = {
     setsave: function (params) {
         this.set(params);
         this.save();
+        this.updateFetchApiConfig();
     },
 
     CheckUrl: function () {

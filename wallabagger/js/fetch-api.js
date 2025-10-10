@@ -1,6 +1,18 @@
-const FetchApi = function () {};
+const FetchApi = function () {
+    this.autheliaConfig = {
+        enableCookies: false,
+        headerName: null,
+        headerValue: null
+    };
+};
 
 FetchApi.prototype = {
+
+    setAutheliaConfig: function (config) {
+        if (config) {
+            this.autheliaConfig = Object.assign({}, this.autheliaConfig, config);
+        }
+    },
 
     getRequestOptions: function (method, token, content) {
         let options = {
@@ -8,7 +20,7 @@ FetchApi.prototype = {
             headers: this.getHeaders(token),
             mode: 'cors',
             cache: 'default',
-            credentials: 'omit'
+            credentials: this.autheliaConfig.enableCookies ? 'include' : 'omit'
         };
         if (content !== '') {
             options = Object.assign(options, { body: JSON.stringify(content) });
@@ -23,6 +35,10 @@ FetchApi.prototype = {
         };
         if (token !== '') {
             headers.Authorization = `Bearer ${token}`;
+        }
+        // 添加 Authelia 自定义 header（如果配置了）
+        if (this.autheliaConfig.headerName && this.autheliaConfig.headerValue) {
+            headers[this.autheliaConfig.headerName] = this.autheliaConfig.headerValue;
         }
         return headers;
     },

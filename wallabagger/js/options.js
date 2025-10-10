@@ -36,6 +36,9 @@ class OptionsController {
         this.openFileDialog = document.getElementById('openFile-dialog');
         // HTTPS相关元素已移除
         this.autoAddSingleTag = document.getElementById('single-tag');
+        this.enableAutheliaCookies = document.getElementById('enable-authelia-cookies-checkbox');
+        this.autheliaHeaderName = document.getElementById('authelia-header-name-input');
+        this.autheliaHeaderValue = document.getElementById('authelia-header-value-input');
         this.clientSelector = new ClientSelector(document.getElementById('client-selector'));
         this.addListeners_();
         this.data = null;
@@ -57,6 +60,9 @@ class OptionsController {
         this.openFileDialog.addEventListener('change', this.loadFromFile.bind(this));
         // HTTPS按钮事件监听器已移除
         this.autoAddSingleTag.addEventListener('click', this.autoAddSingleTagClick.bind(this));
+        this.enableAutheliaCookies.addEventListener('click', this.enableAutheliaCookiesClick.bind(this));
+        this.autheliaHeaderName.addEventListener('blur', this.autheliaHeaderNameBlur.bind(this));
+        this.autheliaHeaderValue.addEventListener('blur', this.autheliaHeaderValueBlur.bind(this));
     }
 
     // httpsButtonClick方法已移除
@@ -122,6 +128,23 @@ class OptionsController {
 
     autoAddSingleTagClick (e) {
         Object.assign(this.data, { AutoAddSingleTag: this.autoAddSingleTag.checked });
+        this.port.postMessage({ request: 'setup-save', data: this.data });
+    }
+
+    enableAutheliaCookiesClick (e) {
+        Object.assign(this.data, { EnableAutheliaCookies: this.enableAutheliaCookies.checked });
+        this.port.postMessage({ request: 'setup-save', data: this.data });
+    }
+
+    autheliaHeaderNameBlur (e) {
+        const value = this.cleanStr(this.autheliaHeaderName.value);
+        Object.assign(this.data, { AutheliaHeaderName: value || null });
+        this.port.postMessage({ request: 'setup-save', data: this.data });
+    }
+
+    autheliaHeaderValueBlur (e) {
+        const value = this.autheliaHeaderValue.value;
+        Object.assign(this.data, { AutheliaHeaderValue: value || null });
         this.port.postMessage({ request: 'setup-save', data: this.data });
     }
 
@@ -492,6 +515,11 @@ class OptionsController {
             this._hide(this.sitesToFetchLocallyEl);
         }
         this.setSitesToFetchLocallyUi();
+
+        // 设置 Authelia 配置
+        this.enableAutheliaCookies.checked = this.data.EnableAutheliaCookies || false;
+        this.autheliaHeaderName.value = this.data.AutheliaHeaderName || '';
+        this.autheliaHeaderValue.value = this.data.AutheliaHeaderValue || '';
     }
 
     setSitesToFetchLocallyUi () {
